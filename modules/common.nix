@@ -18,8 +18,6 @@
 
   nix.settings.allowed-users = [ "@wheel" ];
 
-  time.timeZone = "America/Los_Angeles";
-
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
   networking.networkmanager.enable = true;
