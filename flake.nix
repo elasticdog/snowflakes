@@ -11,7 +11,8 @@
       holystone = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          ./configuration.nix
+          ./modules/common.nix
+          ./hosts/holystone/configuration.nix
           nixos-hardware.nixosModules.lenovo-thinkpad-t14-amd-gen2
         ];
       };
