@@ -5,6 +5,8 @@
 { config, pkgs, ... }:
 
 {
+  environment.homeBinInPath = true;
+
   users.defaultUserShell = pkgs.fish;
 
   users.mutableUsers = false;
