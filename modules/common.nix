@@ -21,6 +21,7 @@
   nixpkgs.config.allowUnfree = true;
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
+  boot.tmpOnTmpfs = true;
 
   networking.networkmanager.enable = true;
   networking.networkmanager.wifi.backend = "iwd";
