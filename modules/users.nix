@@ -17,6 +17,7 @@
 
     abs = {
       isNormalUser = true;
+      uid = 1000;
       home = "/home/abs";
       description = "Aaron Bull Schaefer";
       extraGroups = [ "wheel" "networkmanager" ];
