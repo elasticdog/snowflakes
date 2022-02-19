@@ -11,6 +11,7 @@
 
   boot.loader = {
     systemd-boot.enable = true;
+    systemd-boot.memtest86.enable = true;
     efi.canTouchEfiVariables = true;
   };
 
