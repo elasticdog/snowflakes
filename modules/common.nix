@@ -16,7 +16,7 @@
     '';
   };
 
-  nix.allowedUsers = [ "@wheel" ];
+  nix.settings.allowed-users = [ "@wheel" ];
 
   time.timeZone = "America/Los_Angeles";
 
