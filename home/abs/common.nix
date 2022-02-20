@@ -1,6 +1,11 @@
 { pkgs, ... }:
 
 {
+  imports = [
+    ./configs/fish.nix
+    ./configs/git.nix
+  ];
+
   programs.home-manager.enable = true;
   home.username = "abs";
   home.homeDirectory = "/home/abs";
@@ -23,12 +28,6 @@
     tree
     yamllint
   ];
-
-  programs.git = {
-    enable = true;
-    userName = "Aaron Bull Schaefer";
-    userEmail = "aaron@elasticdog.com";
-  };
 
   wayland.windowManager.sway = {
     enable = true;

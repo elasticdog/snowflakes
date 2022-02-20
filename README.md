@@ -16,6 +16,10 @@ hosts should be configured imperatively.
 snowflakes/
 ├── home/
 │   └── abs/
+│       ├── configs/
+│       │   ├── fish.nix
+│       │   ├── git.nix
+│       │   └── [...]
 │       ├── common.nix
 │       └── holystone.nix
 ├── hosts/
@@ -27,7 +31,7 @@ snowflakes/
 │   ├── nix.nix
 │   ├── services.nix
 │   ├── users.nix
-│   └── wayland.nix
+│   └── [...]
 ├── flake.lock
 └── flake.nix
 ```

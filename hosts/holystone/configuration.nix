@@ -6,11 +6,11 @@
 
 {
   imports = [
-    ./hardware-configuration.nix
-    ./hotkey-functions.nix
+    home-manager.nixosModules.home-manager
     nixos-hardware.nixosModules.lenovo-thinkpad-t14-amd-gen2
 
-    home-manager.nixosModules.home-manager
+    ./hardware-configuration.nix
+    ./hotkey-functions.nix
     ../../modules/common.nix
   ];
 
