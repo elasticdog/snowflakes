@@ -7,6 +7,13 @@
 
   home.packages = with pkgs; [
     kakoune
+    nixfmt
+    nodePackages.prettier
+    shellcheck
+    shfmt
+    tflint
+    tfsec
+    yamllint
   ];
 
   programs.git = {
