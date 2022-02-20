@@ -6,20 +6,10 @@
 
 {
   imports = [
+    ./nix.nix
     ./users.nix
+    ./services.nix
   ];
-
-  nix = {
-    package = pkgs.nixUnstable;
-    extraOptions = ''
-      experimental-features = nix-command flakes
-    '';
-  };
-
-  nix.settings.allowed-users = [ "@wheel" ];
-  security.sudo.execWheelOnly = true;
-
-  nixpkgs.config.allowUnfree = true;
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
   boot.tmpOnTmpfs = true;
@@ -27,9 +17,7 @@
   networking.networkmanager.enable = true;
   networking.networkmanager.wifi.backend = "iwd";
 
-  services.openssh = {
-    enable = true;
-    passwordAuthentication = false;
-    startWhenNeeded = true;
-  };
+  nixpkgs.config.allowUnfree = true;
+
+  security.sudo.execWheelOnly = true;
 }
