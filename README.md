@@ -46,6 +46,7 @@ snowflakes/
 
 - [NixOS Manual](https://nixos.org/manual/nixos/unstable/index.html)
 - [NixOS Configuration Options](https://nixos.org/manual/nixos/unstable/options.html)
+- [Nix (builtins) & Nixpkgs (lib) Functions](https://teu5us.github.io/nix-lib.html)
 - [Home Manager Manual](https://nix-community.github.io/home-manager/index.html)
 - [Home Manager Configuration Options](https://nix-community.github.io/home-manager/options.html)
 

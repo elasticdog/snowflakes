@@ -305,3 +305,8 @@ again and mount these partitions, it only takes a few commands:
     [root@nixos:~]# mount /dev/disk/by-label/EFIBOOT /mnt/boot
 
     [root@nixos:~]# swapon /dev/disk/by-label/swap
+
+## References
+
+- https://wiki.archlinux.org/title/Dm-crypt
+- https://wiki.archlinux.org/title/EFI_system_partition

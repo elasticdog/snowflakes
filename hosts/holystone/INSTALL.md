@@ -30,3 +30,4 @@ latest NixOS ISO installed on it.
 
 - [ArchWiki](<https://wiki.archlinux.org/title/Lenovo_ThinkPad_T14_(AMD)_Gen_2>)
 - [nixos-hardware](https://github.com/NixOS/nixos-hardware/tree/master/lenovo/thinkpad/t14/amd/gen2)
+- [AMD Memory Encryption](https://www.kernel.org/doc/html/latest/x86/amd-memory-encryption.html)
