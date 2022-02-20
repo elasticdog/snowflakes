@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ nixpkgs, pkgs, ... }:
 
 {
   nix = {
@@ -14,6 +14,9 @@
     gc.automatic = true;
     gc.options = "--delete-older-than 30d";
     optimise.automatic = true;
+
+    # pin the system nixpkgs registry to our flake's revision
+    registry.nixpkgs.flake = nixpkgs;
 
     settings.allowed-users = [ "@wheel" ];
   };

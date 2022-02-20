@@ -10,14 +10,12 @@
     };
   };
 
-  outputs = { self, nixpkgs, nixos-hardware, home-manager }: {
+  outputs = { self, nixpkgs, nixos-hardware, home-manager } @ inputs: {
     nixosConfigurations = {
       holystone = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
+        specialArgs = inputs;
         modules = [
-          # pin the system nixpkgs registry to our flake's revision
-          { nix.registry.nixpkgs.flake = nixpkgs; }
-
           ./modules/common.nix
           ./hosts/holystone/configuration.nix
 
