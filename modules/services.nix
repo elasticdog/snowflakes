@@ -5,6 +5,8 @@
 { config, pkgs, ... }:
 
 {
+  services.chrony.enable = true;
+
   services.openssh = {
     enable = true;
     passwordAuthentication = false;
