@@ -9,6 +9,7 @@
     ./nix.nix
     ./users.nix
     ./services.nix
+    ./wayland.nix
   ];
 
   boot.kernelPackages = pkgs.linuxPackages_latest;

@@ -5,13 +5,8 @@
 { config, pkgs, ... }:
 
 {
-  services.chrony.enable = true;
+  programs.sway.enable = true;
 
-  services.openssh = {
-    enable = true;
-    passwordAuthentication = false;
-    startWhenNeeded = true;
-  };
-
-  services.pipewire.enable = true;
+  # allow for screen sharing
+  xdg.portal.wlr.enable = true;
 }
