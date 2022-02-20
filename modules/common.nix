@@ -17,4 +17,6 @@
   nixpkgs.config.allowUnfree = true;
 
   security.sudo.execWheelOnly = true;
+
+  time.timeZone = "UTC";
 }

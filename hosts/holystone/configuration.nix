@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, nixos-hardware, pkgs, ... }:
+{ config, lib, nixos-hardware, pkgs, ... }:
 
 {
   imports = [
@@ -30,14 +30,14 @@
   # enable periodic SSD TRIM of mounted partitions in background
   services.fstrim.enable = true;
 
+  networking.hostName = "holystone";
   networking = {
-    hostName = "holystone";
     useDHCP = false;
     interfaces.enp2s0f0.useDHCP = false;
     interfaces.enp5s0.useDHCP = true;
   };
 
-  time.timeZone = "America/Los_Angeles";
+  time.timeZone = lib.mkForce "America/Los_Angeles";
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
