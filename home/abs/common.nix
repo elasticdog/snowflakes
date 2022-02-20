@@ -6,14 +6,21 @@
   home.homeDirectory = "/home/abs";
 
   home.packages = with pkgs; [
+    bat
+    direnv
+    fd
+    iosevka
     kakoune
     kitty
+    lf
     nixpkgs-fmt
     nodePackages.prettier
+    ripgrep
     shellcheck
     shfmt
-    tflint
-    tfsec
+    skim
+    tig
+    tree
     yamllint
   ];
 
