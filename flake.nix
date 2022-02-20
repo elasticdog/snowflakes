@@ -16,10 +16,7 @@
         system = "x86_64-linux";
         specialArgs = inputs;
         modules = [
-          ./modules/common.nix
           ./hosts/holystone/configuration.nix
-
-          nixos-hardware.nixosModules.lenovo-thinkpad-t14-amd-gen2
 
           home-manager.nixosModules.home-manager
           {

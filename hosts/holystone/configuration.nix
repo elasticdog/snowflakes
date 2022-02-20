@@ -2,12 +2,15 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, ... }:
+{ config, nixos-hardware, pkgs, ... }:
 
 {
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
+    nixos-hardware.nixosModules.lenovo-thinkpad-t14-amd-gen2
+
+    ../../modules/common.nix
   ];
 
   boot.loader = {
