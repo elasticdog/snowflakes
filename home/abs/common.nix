@@ -7,6 +7,7 @@
 
   home.packages = with pkgs; [
     kakoune
+    kitty
     nixpkgs-fmt
     nodePackages.prettier
     shellcheck
@@ -20,5 +21,10 @@
     enable = true;
     userName = "Aaron Bull Schaefer";
     userEmail = "aaron@elasticdog.com";
+  };
+
+  wayland.windowManager.sway = {
+    enable = true;
+    config.terminal = "kitty";
   };
 }
