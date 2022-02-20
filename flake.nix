@@ -23,7 +23,8 @@
 
           nixos-hardware.nixosModules.lenovo-thinkpad-t14-amd-gen2
 
-          home-manager.nixosModules.home-manager {
+          home-manager.nixosModules.home-manager
+          {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.abs = import ./home/abs/holystone.nix;
