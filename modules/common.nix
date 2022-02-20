@@ -17,6 +17,7 @@
   };
 
   nix.settings.allowed-users = [ "@wheel" ];
+  security.sudo.execWheelOnly = true;
 
   nixpkgs.config.allowUnfree = true;
 
