@@ -2,14 +2,14 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, lib, nixos-hardware, pkgs, ... }:
+{ config, home-manager, lib, nixos-hardware, pkgs, ... }:
 
 {
   imports = [
-    # Include the results of the hardware scan.
     ./hardware-configuration.nix
     nixos-hardware.nixosModules.lenovo-thinkpad-t14-amd-gen2
 
+    home-manager.nixosModules.home-manager
     ../../modules/common.nix
   ];
 
@@ -27,8 +27,9 @@
     };
   };
 
-  # enable periodic SSD TRIM of mounted partitions in background
-  services.fstrim.enable = true;
+  home-manager.useGlobalPkgs = true;
+  home-manager.useUserPackages = true;
+  home-manager.users.abs = import ../../home/abs/holystone.nix;
 
   networking.hostName = "holystone";
   networking = {
@@ -36,6 +37,9 @@
     interfaces.enp2s0f0.useDHCP = false;
     interfaces.enp5s0.useDHCP = true;
   };
+
+  # enable periodic SSD TRIM of mounted partitions in background
+  services.fstrim.enable = true;
 
   time.timeZone = lib.mkForce "America/Los_Angeles";
 
