@@ -7,6 +7,7 @@
 {
   imports = [
     ./hardware-configuration.nix
+    ./hotkey-functions.nix
     nixos-hardware.nixosModules.lenovo-thinkpad-t14-amd-gen2
 
     home-manager.nixosModules.home-manager
@@ -26,9 +27,6 @@
       allowDiscards = true;
     };
   };
-
-  # screen backlight control
-  hardware.brillo.enable = true;
 
   home-manager.useGlobalPkgs = true;
   home-manager.useUserPackages = true;
