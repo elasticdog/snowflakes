@@ -7,7 +7,7 @@
 
   home.packages = with pkgs; [
     kakoune
-    nixfmt
+    nixpkgs-fmt
     nodePackages.prettier
     shellcheck
     shfmt
