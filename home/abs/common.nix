@@ -24,6 +24,7 @@
     lf
     nixpkgs-fmt
     nodePackages.prettier
+    pamixer
     ripgrep
     shellcheck
     shfmt
