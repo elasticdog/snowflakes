@@ -12,8 +12,10 @@
 
   home.packages = with pkgs; [
     bat
+    bitwarden-cli
     direnv
     fd
+    helix
     iosevka
     kakoune
     kitty
