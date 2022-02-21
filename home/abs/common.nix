@@ -3,6 +3,7 @@
 {
   imports = [
     ./configs/fish.nix
+    ./configs/firefox.nix
     ./configs/git.nix
     ./configs/sway.nix
     ./configs/swayidle.nix
@@ -13,14 +14,17 @@
   home.username = "abs";
   home.homeDirectory = "/home/abs";
 
+  # https://nix-community.github.io/home-manager/release-notes.html
+  home.stateVersion = "22.05";
+
   home.packages = with pkgs; [
     bat
     bitwarden-cli
     direnv
     fd
-    firefox-wayland
     helix
     iosevka
+    jq
     kakoune
     kitty
     lf
@@ -36,6 +40,7 @@
     tree
     wlsunset
     yamllint
+    zathura
     zoom-us
   ];
 }
