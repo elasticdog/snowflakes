@@ -13,7 +13,12 @@
           repeat_rate = "40";
           xkb_options = "altwin:prtsc_rwin,ctrl:nocaps,shift:both_capslock";
         };
-        "type:touchpad" = { tap = "enabled"; natural_scroll = "enabled"; };
+        "type:touchpad" = {
+          natural_scroll = "enabled";
+          pointer_accel = "0.6";
+          scroll_factor = "4";
+          tap = "enabled";
+        };
       };
 
       keybindings =
@@ -31,8 +36,11 @@
           "Shift+XF86MonBrightnessUp" = "exec brillo -u 100000 -q -S 100";
         };
 
+      # TODO: this generates the proper environment variables, but doesn't work
+      # due to an upstream bug: https://github.com/swaywm/sway/issues/4610
+      #
       # adjust the size of the mouse cursor
-      #seat = { "seat0" = { xcursor_theme = "default 64"; }; };
+      seat = { "seat0" = { xcursor_theme = "default 64"; }; };
 
       menu = "bemenu-run";
       terminal = "kitty";
