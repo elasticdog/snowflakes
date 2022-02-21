@@ -42,6 +42,7 @@
       # adjust the size of the mouse cursor
       seat = { "seat0" = { xcursor_theme = "default 64"; }; };
 
+      bars = [ ]; # disable swaybars
       menu = "bemenu-run";
       terminal = "kitty";
       workspaceAutoBackAndForth = true;

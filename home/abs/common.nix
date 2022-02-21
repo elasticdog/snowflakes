@@ -7,6 +7,7 @@
     ./configs/git.nix
     ./configs/sway.nix
     ./configs/swayidle.nix
+    ./configs/waybar.nix
     ./configs/wlsunet.nix
   ];
 
