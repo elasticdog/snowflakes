@@ -5,6 +5,7 @@
     ./configs/fish.nix
     ./configs/git.nix
     ./configs/sway.nix
+    ./configs/wlsunet.nix
   ];
 
   programs.home-manager.enable = true;
@@ -32,6 +33,8 @@
     skim
     tig
     tree
+    wlsunset
     yamllint
+    zoom-us
   ];
 }
