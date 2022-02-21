@@ -18,6 +18,9 @@
   nixpkgs.config.allowUnfree = true;
 
   security.sudo.execWheelOnly = true;
+  security.sudo.extraConfig = ''
+    Defaults timestamp_timeout=20
+  '';
 
   time.timeZone = "UTC";
 }
