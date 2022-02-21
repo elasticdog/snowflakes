@@ -19,7 +19,7 @@
 
   security.sudo.execWheelOnly = true;
   security.sudo.extraConfig = ''
-    Defaults timestamp_timeout=20
+    Defaults timestamp_timeout=120
   '';
 
   time.timeZone = "UTC";

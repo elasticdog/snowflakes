@@ -6,9 +6,6 @@
     {
       enable = true;
 
-      # wait for swaylock to lock before releasing
-      extraArgs = [ "-w" ];
-
       events = [
         { event = "before-sleep"; command = "${lockCommand}"; }
         { event = "lock"; command = "${lockCommand}"; }
@@ -21,8 +18,12 @@
         }
         {
           timeout = 1500; # 25m
-          command = "swaymsg 'output * dpms off'";
-          resumeCommand = "swaymsg 'output * dpms on'";
+          command = "swaymsg \"output * dpms off\"";
+          resumeCommand = "swaymsg \"output * dpms on\"";
+        }
+        {
+          timeout = 1800; # 30m
+          command = "sudo --remove-timestamp";
         }
       ];
     };
