@@ -29,7 +29,7 @@
           "XF86AudioMute" = "exec pamixer --toggle-mute";
           "XF86AudioLowerVolume" = "exec pamixer --decrease 10";
           "XF86AudioRaiseVolume" = "exec pamixer --increase 10";
-          "XF86AudioMicMute" = "exec pamixer --source 50 --toggle-mute";
+          "XF86AudioMicMute" = "exec pamixer --source 'alsa_input.pci-0000_07_00.6.HiFi__hw_acp__source' --toggle-mute";
           "XF86MonBrightnessDown" = "exec brillo -q -U 8";
           "XF86MonBrightnessUp" = "exec brillo -q -A 10";
           "Shift+XF86MonBrightnessDown" = "exec brillo -u 100000 -q -S 0";
