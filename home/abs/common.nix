@@ -25,6 +25,7 @@
     nixpkgs-fmt
     nodePackages.prettier
     pamixer
+    pavucontrol
     ripgrep
     shellcheck
     shfmt

@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./audio.nix
     ./nix.nix
     ./users.nix
     ./services.nix
