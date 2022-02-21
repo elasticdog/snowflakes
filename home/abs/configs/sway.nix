@@ -5,8 +5,11 @@
     enable = true;
 
     config = {
+      modifier = "Mod4"; # Super
+
       input = {
         "*" = { xkb_options = "altwin:prtsc_rwin,ctrl:nocaps,shift:both_capslock"; };
+        "touchpad" = { tap = "enabled"; natural_scroll = "enabled"; };
       };
 
       keybindings =
@@ -20,8 +23,12 @@
           "Shift+XF86MonBrightnessUp" = "exec /run/current-system/sw/bin/brillo -u 100000 -q -S 100";
         };
 
-      modifier = "Mod4"; # Super
+      # double the size of the mouse cursor
+      seat = { "seat0" = { xcursor_theme = "default 48"; }; };
+
       terminal = "kitty";
+      workspaceAutoBackAndForth = true;
+      workspaceLayout = "stacking";
     };
   };
 }
