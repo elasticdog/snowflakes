@@ -31,8 +31,8 @@
           "Shift+XF86MonBrightnessUp" = "exec brillo -u 100000 -q -S 100";
         };
 
-      # double the size of the mouse cursor
-      seat = { "seat0" = { xcursor_theme = "default 64"; }; };
+      # adjust the size of the mouse cursor
+      #seat = { "seat0" = { xcursor_theme = "default 64"; }; };
 
       terminal = "kitty";
       workspaceAutoBackAndForth = true;
