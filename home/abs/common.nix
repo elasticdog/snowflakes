@@ -4,6 +4,7 @@
   imports = [
     ./configs/fish.nix
     ./configs/git.nix
+    ./configs/sway.nix
   ];
 
   programs.home-manager.enable = true;
@@ -31,9 +32,4 @@
     tree
     yamllint
   ];
-
-  wayland.windowManager.sway = {
-    enable = true;
-    config.terminal = "kitty";
-  };
 }
