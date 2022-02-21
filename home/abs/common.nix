@@ -5,6 +5,7 @@
     ./configs/fish.nix
     ./configs/git.nix
     ./configs/sway.nix
+    ./configs/swayidle.nix
     ./configs/wlsunet.nix
   ];
 
