@@ -38,6 +38,7 @@
     interfaces.enp2s0f0.useDHCP = false;
     interfaces.enp5s0.useDHCP = true;
   };
+  networking.networkmanager.unmanaged = [ "enp2s0f0" ];
 
   # enable periodic SSD TRIM of mounted partitions in background
   services.fstrim.enable = true;
