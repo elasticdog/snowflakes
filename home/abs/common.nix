@@ -15,6 +15,7 @@
     bitwarden-cli
     direnv
     fd
+    firefox-wayland
     helix
     iosevka
     kakoune
