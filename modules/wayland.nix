@@ -3,7 +3,12 @@
 {
   programs.sway = {
     enable = true;
-    extraPackages = with pkgs; [ bemenu swayidle swaylock ];
+    extraPackages = with pkgs; [
+      bemenu
+      j4-dmenu-desktop
+      swayidle
+      swaylock
+    ];
   };
 
   # allow for screen sharing

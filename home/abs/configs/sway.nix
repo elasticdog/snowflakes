@@ -43,7 +43,7 @@
       seat = { "seat0" = { xcursor_theme = "default 64"; }; };
 
       bars = [ ]; # disable swaybars
-      menu = "bemenu-run";
+      menu = "j4-dmenu-desktop --no-generic --dmenu=\"bemenu --no-overlap --prompt ' ' --ignorecase --list 8 --scrollbar autohide --wrap\"";
       terminal = "kitty";
       workspaceAutoBackAndForth = true;
       workspaceLayout = "stacking";

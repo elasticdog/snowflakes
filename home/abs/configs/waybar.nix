@@ -5,7 +5,7 @@
 
     settings = {
       mainBar = {
-        layer = "top";
+        layer = "bottom";
         position = "top";
 
         modules-left = [ "sway/workspaces" "sway/mode" ];
