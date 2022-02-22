@@ -28,7 +28,7 @@
         genericName = "Web Browser";
         categories = [ "Network" "WebBrowser" ];
         icon = "firefox";
-        exec = "firefox --profile ${profile} %U";
+        exec = "firefox -P ${profile} %U";
         startupNotify = true;
         terminal = false;
         mimeType = [
