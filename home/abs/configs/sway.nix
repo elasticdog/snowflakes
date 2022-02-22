@@ -56,6 +56,7 @@
 
       bars = [ ]; # disable swaybars
       focus.forceWrapping = true;
+      fonts.size = 0.0;
       menu = "j4-dmenu-desktop --no-generic --dmenu=\"bemenu --no-overlap --prompt ' ' --ignorecase --list 8 --scrollbar autohide --wrap\"";
       terminal = "kitty";
       workspaceAutoBackAndForth = true;
