@@ -5,6 +5,7 @@
     ./configs/fish.nix
     ./configs/firefox.nix
     ./configs/git.nix
+    ./configs/kitty.nix
     ./configs/sway.nix
     ./configs/swayidle.nix
     ./configs/waybar.nix
@@ -30,10 +31,8 @@
     direnv
     fd
     helix
-    iosevka
     jq
     kakoune
-    kitty
     lf
     nixpkgs-fmt
     nodePackages.prettier
