@@ -11,6 +11,12 @@
     ];
   };
 
+  fonts.fonts = with pkgs; [
+    iosevka
+    fira-code
+    font-awesome
+  ];
+
   # allow for screen sharing
   xdg.portal.wlr.enable = true;
 }
