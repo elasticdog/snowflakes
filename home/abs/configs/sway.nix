@@ -42,6 +42,10 @@
           "Shift+XF86MonBrightnessUp" = "exec brillo -u 100000 -q -S 100";
         };
 
+      output = {
+        "*" = { bg = "~/.local/share/backgrounds/firewatch-awake-3840x2160.jpg stretch"; };
+      };
+
       # TODO: this generates the proper environment variables, but doesn't work
       # due to an upstream bug: https://github.com/swaywm/sway/issues/4610
       #

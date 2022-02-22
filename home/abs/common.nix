@@ -18,6 +18,12 @@
   # https://nix-community.github.io/home-manager/release-notes.html
   home.stateVersion = "22.05";
 
+  home.file.backgrounds = {
+    source = ./backgrounds;
+    target = ".local/share/backgrounds";
+    recursive = true;
+  };
+
   home.packages = with pkgs; [
     bat
     bitwarden-cli

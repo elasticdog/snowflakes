@@ -1,7 +1,7 @@
 {
   services.swayidle =
     let
-      lockCommand = "swaylock --daemonize --show-failed-attempts";
+      lockCommand = "swaylock --daemonize --show-failed-attempts --image ~/.local/share/backgrounds/firewatch-asleep-3840x2160.jpg";
     in
     {
       enable = true;
