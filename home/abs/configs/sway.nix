@@ -7,6 +7,11 @@
     config = {
       modifier = "Mod4"; # Super
 
+      gaps = {
+        inner = 25;
+        smartGaps = true;
+      };
+
       input = {
         "type:keyboard" = {
           repeat_delay = "200";
