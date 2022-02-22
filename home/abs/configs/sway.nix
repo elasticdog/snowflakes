@@ -3,6 +3,7 @@
 {
   wayland.windowManager.sway = {
     enable = true;
+    systemdIntegration = true;
 
     config = {
       modifier = "Mod4"; # Super

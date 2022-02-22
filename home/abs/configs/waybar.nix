@@ -1,11 +1,15 @@
 {
   programs.waybar = {
     enable = true;
-    systemd.enable = true;
+
+    systemd = {
+      enable = true;
+      target = "sway-session.target";
+    };
 
     settings = {
       mainBar = {
-        layer = "bottom";
+        layer = "top";
         position = "top";
 
         modules-left = [ "sway/workspaces" "sway/mode" ];
