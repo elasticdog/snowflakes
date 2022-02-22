@@ -44,7 +44,6 @@
     skim
     tig
     tree
-    wlsunset
     yamllint
     zathura
     zoom-us
