@@ -40,6 +40,7 @@
           "XF86MonBrightnessUp" = "exec brillo -q -A 10";
           "Shift+XF86MonBrightnessDown" = "exec brillo -u 100000 -q -S 0";
           "Shift+XF86MonBrightnessUp" = "exec brillo -u 100000 -q -S 100";
+          "XF86Favorites" = "exec swaylock --daemonize --show-failed-attempts --image ~/.local/share/backgrounds/firewatch-asleep-3840x2160.jpg";
         };
 
       output = {
