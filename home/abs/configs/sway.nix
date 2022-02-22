@@ -10,6 +10,7 @@
 
       gaps = {
         inner = 25;
+        smartBorders = "no_gaps";
         smartGaps = true;
       };
 
@@ -54,6 +55,7 @@
       seat = { "seat0" = { xcursor_theme = "default 64"; }; };
 
       bars = [ ]; # disable swaybars
+      focus.forceWrapping = true;
       menu = "j4-dmenu-desktop --no-generic --dmenu=\"bemenu --no-overlap --prompt ' ' --ignorecase --list 8 --scrollbar autohide --wrap\"";
       terminal = "kitty";
       workspaceAutoBackAndForth = true;
