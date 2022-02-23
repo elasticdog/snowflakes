@@ -70,7 +70,7 @@
       bindsym --locked XF86MonBrightnessUp exec brillo -q -A 10
       bindsym --locked Shift+XF86MonBrightnessDown exec brillo -u 100000 -q -S 0
       bindsym --locked Shift+XF86MonBrightnessUp exec brillo -u 100000 -q -S 100
-      for_window [app_id="qalculate-gtk"] floating enable, resize set 20 ppt, move position 1457 px 53 px, move scratchpad, scratchpad show
+      for_window [app_id="qalculate-gtk"] floating enable, resize set 20 ppt, move position 18 px 9 px, move scratchpad, scratchpad show
       for_window [app_id="firefox" title="Sharing Indicator$"] floating enable, sticky enable, border none, move position 1835 px 995 px
     '';
   };
