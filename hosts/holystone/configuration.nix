@@ -43,6 +43,17 @@
   # enable periodic SSD TRIM of mounted partitions in background
   services.fstrim.enable = true;
 
+  # what to do when the laptop lid is closed
+  # or the power button is pressed
+  services.logind = {
+    lidSwitch = "suspend-then-hibernate";
+    lidSwitchExternalPower = "suspend";
+    extraConfig = ''
+      HandlePowerKey=suspend-then-hibernate
+    '';
+  };
+  systemd.sleep.extraConfig = "HibernateDelaySec=3h";
+
   # optimize laptop battery life
   services.tlp.enable = true;
 
