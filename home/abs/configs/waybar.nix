@@ -65,6 +65,8 @@
             default = [ "" "" "" ];
           };
           on-click = "pavucontrol";
+          on-scroll-up = "pamixer --decrease 10";
+          on-scroll-down = "pamixer --increase 10";
           smooth-scrolling-threshold = 5.0;
         };
 
