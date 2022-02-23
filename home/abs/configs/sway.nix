@@ -38,6 +38,8 @@
         lib.mkOptionDefault {
           "XF86Display" = "exec wdisplays";
           "XF86Favorites" = "exec swaylock --daemonize --show-failed-attempts --image ~/.local/share/backgrounds/firewatch-asleep-3840x2160.jpg";
+          "Control+Mod1+XF86Favorites" = "exec reboot";
+          "Control+Mod4+Mod1+XF86Favorites" = "exec poweroff";
           "${modifier}+equal" = "[app_id=\"qalculate-gtk\"] scratchpad show";
         };
 
