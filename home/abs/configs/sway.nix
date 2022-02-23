@@ -37,6 +37,7 @@
           modifier = config.wayland.windowManager.sway.config.modifier;
         in
         lib.mkOptionDefault {
+          "XF86Display" = "exec wdisplays";
           "XF86Favorites" = "exec swaylock --daemonize --show-failed-attempts --image ~/.local/share/backgrounds/firewatch-asleep-3840x2160.jpg";
           "${modifier}+equal" = "[app_id=\"qalculate-gtk\"] scratchpad show";
         };

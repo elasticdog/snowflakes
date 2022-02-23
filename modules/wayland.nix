@@ -9,6 +9,7 @@
       swayidle
       swaylock
       wl-clipboard
+      wdisplays
     ];
   };
 
