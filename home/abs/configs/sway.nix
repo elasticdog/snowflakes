@@ -37,14 +37,6 @@
           modifier = config.wayland.windowManager.sway.config.modifier;
         in
         lib.mkOptionDefault {
-          "XF86AudioMute" = "exec pamixer --toggle-mute";
-          "XF86AudioLowerVolume" = "exec pamixer --decrease 10";
-          "XF86AudioRaiseVolume" = "exec pamixer --increase 10";
-          "XF86AudioMicMute" = "exec pamixer --source 'alsa_input.pci-0000_07_00.6.HiFi__hw_acp__source' --toggle-mute";
-          "XF86MonBrightnessDown" = "exec brillo -q -U 8";
-          "XF86MonBrightnessUp" = "exec brillo -q -A 10";
-          "Shift+XF86MonBrightnessDown" = "exec brillo -u 100000 -q -S 0";
-          "Shift+XF86MonBrightnessUp" = "exec brillo -u 100000 -q -S 100";
           "XF86Favorites" = "exec swaylock --daemonize --show-failed-attempts --image ~/.local/share/backgrounds/firewatch-asleep-3840x2160.jpg";
           "${modifier}+equal" = "[app_id=\"qalculate-gtk\"] scratchpad show";
         };
@@ -69,6 +61,14 @@
     };
 
     extraConfig = ''
+      bindsym --locked XF86AudioMute exec pamixer --toggle-mute
+      bindsym --locked XF86AudioLowerVolume exec pamixer --decrease 10
+      bindsym --locked XF86AudioRaiseVolume exec pamixer --increase 10
+      bindsym --locked XF86AudioMicMute exec pamixer --source "alsa_input.pci-0000_07_00.6.HiFi__hw_acp__source" --toggle-mute
+      bindsym --locked XF86MonBrightnessDown exec brillo -q -U 8
+      bindsym --locked XF86MonBrightnessUp exec brillo -q -A 10
+      bindsym --locked Shift+XF86MonBrightnessDown exec brillo -u 100000 -q -S 0
+      bindsym --locked Shift+XF86MonBrightnessUp exec brillo -u 100000 -q -S 100
       for_window [app_id="qalculate-gtk"] floating enable, resize set 20 ppt, move position 1457 px 53 px, move scratchpad, scratchpad show
     '';
   };
