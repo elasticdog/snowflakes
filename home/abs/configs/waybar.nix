@@ -51,8 +51,8 @@
         pulseaudio = {
           format = "{volume}% {icon} {format_source}";
           format-bluetooth = "{volume}% {icon} {format_source}";
-          format-bluetooth-muted = " {icon} {format_source}";
-          format-muted = " {format_source}";
+          format-bluetooth-muted = " {icon} {format_source}";
+          format-muted = " {format_source}";
           format-source = "";
           format-source-muted = "";
           format-icons = {
@@ -72,7 +72,7 @@
           format-wifi = "{essid} ({signalStrength}%) ";
           format-ethernet = "{ipaddr} ";
           tooltip-format = "{ifname} via {gwaddr} ";
-          format-linked = "{ifname} (No IP) ";
+          format-linked = "{ifname} (no ip) ";
           format-disconnected = "disconnected ⚠";
           format-alt = "{ifname}: {ipaddr}/{cidr}";
         };
