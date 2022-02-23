@@ -3,9 +3,10 @@
 {
   imports = [
     ./audio.nix
+    ./containers.nix
     ./nix.nix
-    ./users.nix
     ./services.nix
+    ./users.nix
     ./wayland.nix
   ];
 
