@@ -8,6 +8,7 @@
       j4-dmenu-desktop
       swayidle
       swaylock
+      wl-clipboard
     ];
   };
 
