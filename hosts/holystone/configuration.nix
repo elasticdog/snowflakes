@@ -43,6 +43,9 @@
   # enable periodic SSD TRIM of mounted partitions in background
   services.fstrim.enable = true;
 
+  # optimize laptop battery life
+  services.tlp.enable = true;
+
   time.timeZone = lib.mkForce "America/Los_Angeles";
 
   # This value determines the NixOS release from which the default
