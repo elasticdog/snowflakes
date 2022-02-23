@@ -31,6 +31,7 @@
     bitwarden-cli
     direnv
     fd
+    glances
     helix
     jq
     kakoune
