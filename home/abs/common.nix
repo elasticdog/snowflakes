@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./configs/direnv.nix
     ./configs/fish.nix
     ./configs/firefox.nix
     ./configs/flameshot.nix
@@ -29,7 +30,6 @@
   home.packages = with pkgs; [
     bat
     bitwarden-cli
-    direnv
     fd
     glances
     helix
