@@ -14,19 +14,19 @@
     ../../modules/common.nix
   ];
 
-  boot.loader = {
-    systemd-boot.enable = true;
-    systemd-boot.consoleMode = "auto";
-    systemd-boot.memtest86.enable = true;
-    efi.canTouchEfiVariables = true;
-  };
-
   boot.initrd.luks.devices = {
     crypted = {
       device = "/dev/disk/by-uuid/c4e9dd7e-7f4a-457c-80cc-33db52e34194";
       preLVM = true;
       allowDiscards = true;
     };
+  };
+
+  boot.loader = {
+    systemd-boot.enable = true;
+    systemd-boot.consoleMode = "auto";
+    systemd-boot.memtest86.enable = true;
+    efi.canTouchEfiVariables = true;
   };
 
   home-manager.useGlobalPkgs = true;
@@ -43,16 +43,6 @@
 
   # enable periodic SSD TRIM of mounted partitions in background
   services.fstrim.enable = true;
-
-  # what to do when the laptop lid is closed
-  # or the power button is short-pressed
-  services.logind = {
-    lidSwitch = "suspend-then-hibernate";
-    extraConfig = ''
-      HandlePowerKey=suspend-then-hibernate
-    '';
-  };
-  systemd.sleep.extraConfig = "HibernateDelaySec=3h";
 
   # optimize laptop battery life
   services.tlp.enable = true;
