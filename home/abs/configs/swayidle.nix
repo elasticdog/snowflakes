@@ -14,16 +14,20 @@
       timeouts = [
         {
           timeout = 1200; # 20m
-          command = "${lockCommand}";
-        }
-        {
-          timeout = 1500; # 25m
           command = "swaymsg \"output * dpms off\"";
           resumeCommand = "swaymsg \"output * dpms on\"";
         }
         {
+          timeout = 1500; # 25m
+          command = "${lockCommand}";
+        }
+        {
           timeout = 1800; # 30m
           command = "sudo --remove-timestamp";
+        }
+        {
+          timeout = 3600; # 60m
+          command = "systemctl suspend-then-hibernate";
         }
       ];
     };

@@ -44,10 +44,9 @@
   services.fstrim.enable = true;
 
   # what to do when the laptop lid is closed
-  # or the power button is pressed
+  # or the power button is short-pressed
   services.logind = {
     lidSwitch = "suspend-then-hibernate";
-    lidSwitchExternalPower = "suspend";
     extraConfig = ''
       HandlePowerKey=suspend-then-hibernate
     '';
