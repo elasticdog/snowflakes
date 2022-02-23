@@ -64,7 +64,7 @@
       bindsym --locked XF86AudioMute exec pamixer --toggle-mute
       bindsym --locked XF86AudioLowerVolume exec pamixer --decrease 10
       bindsym --locked XF86AudioRaiseVolume exec pamixer --increase 10
-      bindsym --locked XF86AudioMicMute exec pamixer --source "alsa_input.pci-0000_07_00.6.HiFi__hw_acp__source" --toggle-mute
+      bindsym --locked XF86AudioMicMute exec pamixer --default-source --toggle-mute
       bindsym --locked XF86MonBrightnessDown exec brillo -q -U 8
       bindsym --locked XF86MonBrightnessUp exec brillo -q -A 10
       bindsym --locked Shift+XF86MonBrightnessDown exec brillo -u 100000 -q -S 0
