@@ -8,6 +8,10 @@
     config = {
       modifier = "Mod4"; # Super
 
+      floating.criteria = [
+        { app_id = "pavucontrol"; }
+      ];
+
       gaps = {
         inner = 25;
         smartBorders = "no_gaps";
@@ -42,6 +46,7 @@
           "Shift+XF86MonBrightnessDown" = "exec brillo -u 100000 -q -S 0";
           "Shift+XF86MonBrightnessUp" = "exec brillo -u 100000 -q -S 100";
           "XF86Favorites" = "exec swaylock --daemonize --show-failed-attempts --image ~/.local/share/backgrounds/firewatch-asleep-3840x2160.jpg";
+          "${modifier}+equal" = "[app_id=\"qalculate-gtk\"] scratchpad show";
         };
 
       output = {
@@ -62,5 +67,9 @@
       workspaceAutoBackAndForth = true;
       workspaceLayout = "stacking";
     };
+
+    extraConfig = ''
+      for_window [app_id="qalculate-gtk"] floating enable, resize set 20 ppt, move position 1457 px 53 px, move scratchpad, scratchpad show
+    '';
   };
 }

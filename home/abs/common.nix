@@ -38,6 +38,7 @@
     nodePackages.prettier
     pamixer
     pavucontrol
+    qalculate-gtk
     ripgrep
     shellcheck
     shfmt
