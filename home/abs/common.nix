@@ -4,6 +4,7 @@
   imports = [
     ./configs/fish.nix
     ./configs/firefox.nix
+    ./configs/flameshot.nix
     ./configs/git.nix
     ./configs/kitty.nix
     ./configs/sway.nix
