@@ -46,6 +46,7 @@
     shellcheck
     shfmt
     skim
+    spotify
     tig
     tree
     yamllint
