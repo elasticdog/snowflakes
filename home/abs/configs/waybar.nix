@@ -68,7 +68,7 @@
           on-click-right = "pavucontrol";
           on-scroll-up = "pamixer --decrease 10";
           on-scroll-down = "pamixer --increase 10";
-          smooth-scrolling-threshold = 5.0;
+          smooth-scrolling-threshold = 2.0;
         };
 
         network = {
@@ -99,7 +99,7 @@
           format = "{percent}% ";
           on-scroll-up = "brillo -q -U 8";
           on-scroll-down = "brillo -q -A 10";
-          smooth-scrolling-threshold = 5.0;
+          smooth-scrolling-threshold = 2.0;
         };
 
         battery = {
@@ -117,7 +117,7 @@
 
         clock = {
           format-alt = "{:%a, %b %d  %H:%M %Z}";
-          smooth-scrolling-threshold = 10.0;
+          smooth-scrolling-threshold = 4.0;
           timezones = [ "America/Los_Angeles" "UTC" ];
           today-format = "<b><span bgcolor=\"#E4564999\">{}</span></b>";
           tooltip-format = "<span font_size=\"150%\">{:%Y %B}</span>\n<tt>{calendar}</tt>";

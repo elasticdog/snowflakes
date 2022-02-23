@@ -27,7 +27,6 @@
         "type:touchpad" = {
           natural_scroll = "enabled";
           pointer_accel = "0.6";
-          scroll_factor = "4";
           tap = "enabled";
         };
       };
