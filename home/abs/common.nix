@@ -33,6 +33,7 @@
     fd
     glances
     helix
+    jless
     jq
     kakoune
     lf
