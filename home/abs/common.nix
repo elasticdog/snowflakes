@@ -36,6 +36,7 @@
     fd
     glances
     helix
+    hyperfine
     jless
     jq
     lf
