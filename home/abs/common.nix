@@ -6,6 +6,7 @@
     ./configs/fish.nix
     ./configs/firefox.nix
     ./configs/flameshot.nix
+    ./configs/gpg-agent.nix
     ./configs/git.nix
     ./configs/kitty.nix
     ./configs/sway.nix
@@ -32,6 +33,7 @@
     bitwarden-cli
     fd
     glances
+    gnupg
     helix
     jless
     jq
