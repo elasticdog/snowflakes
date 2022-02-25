@@ -32,6 +32,7 @@
   home.packages = with pkgs; [
     bat
     bitwarden-cli
+    editorconfig-core-c
     fd
     glances
     helix

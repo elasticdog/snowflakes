@@ -5,6 +5,10 @@
     config = {
       autoReload = "yes";
 
+      hooks = [
+        { name = "WinCreate"; option = "^[^*]+$"; commands = "editorconfig-load"; }
+      ];
+
       keyMappings = [
         { mode = "insert"; key = "<c-[>"; effect = "<esc>"; }
       ];
