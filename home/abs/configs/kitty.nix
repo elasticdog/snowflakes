@@ -19,6 +19,7 @@
     '';
 
     settings = {
+      allow_remote_control = "yes";
       cursor_text_color = "background";
       disable_ligatures = "cursor";
       enable_audio_bell = false;

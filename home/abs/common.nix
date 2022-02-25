@@ -38,7 +38,6 @@
     helix
     jless
     jq
-    kakoune
     lf
     nixpkgs-fmt
     nodePackages.prettier

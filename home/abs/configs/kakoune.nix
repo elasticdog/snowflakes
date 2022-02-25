@@ -1,3 +1,5 @@
+{ pkgs, ... }:
+
 {
   programs.kakoune = {
     enable = true;
@@ -6,11 +8,13 @@
       autoReload = "yes";
 
       hooks = [
+        { name = "ModuleLoaded"; option = "fzf"; commands = "set-option global fzf_implementation sk"; }
         { name = "WinCreate"; option = "^[^*]+$"; commands = "editorconfig-load"; }
       ];
 
       keyMappings = [
         { mode = "insert"; key = "<c-[>"; effect = "<esc>"; }
+        { mode = "normal"; key = "<c-p>"; effect = ": fzf-mode<ret>"; }
       ];
 
       numberLines = {
@@ -28,7 +32,11 @@
 
     extraConfig = ''
       set-option global autowrap_column 80
-      set-option global grepcmd "rg --column --follow"
+      set-option global grepcmd 'rg --column --follow'
     '';
+
+    plugins = [
+      pkgs.kakounePlugins.kak-fzf
+    ];
   };
 }
