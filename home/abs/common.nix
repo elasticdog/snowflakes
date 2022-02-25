@@ -23,12 +23,6 @@
   home.username = "abs";
   home.homeDirectory = "/home/abs";
 
-  home.file.backgrounds = {
-    source = ./backgrounds;
-    target = ".local/share/backgrounds";
-    recursive = true;
-  };
-
   home.packages = with pkgs; [
     bat
     bitwarden-cli
@@ -59,5 +53,10 @@
 
   home.sessionVariables = {
     EDITOR = "kak";
+  };
+
+  xdg.dataFile.backgrounds = {
+    recursive = true;
+    source = ./backgrounds;
   };
 }

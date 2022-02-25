@@ -1,6 +1,11 @@
 { pkgs, ... }:
 
 {
+  xdg.configFile.kitty_theme = {
+    source = ../colorscheme/kitty.conf;
+    target = "kitty/themes/elasticdog.conf";
+  };
+
   programs.kitty = {
     enable = true;
 
@@ -23,6 +28,7 @@
       cursor_text_color = "background";
       disable_ligatures = "cursor";
       enable_audio_bell = false;
+      include = "themes/elasticdog.conf";
       scrollback_lines = 10000;
       strip_trailing_spaces = "smart";
       touch_scroll_multiplier = "8.0";
