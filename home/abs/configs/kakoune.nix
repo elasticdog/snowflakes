@@ -16,7 +16,17 @@
         {
           name = "ModuleLoaded";
           option = "fzf-file";
-          commands = "set-option global fzf_file_command 'fd --type f --follow --hidden --exclude /.git/'";
+          commands = "set-option global fzf_file_command 'fd --type f --follow --hidden --exclude /.git/ --color never'";
+        }
+        {
+          name = "ModuleLoaded";
+          option = "fzf-grep";
+          commands = "set-option global fzf_grep_command rg";
+        }
+        {
+          name = "ModuleLoaded";
+          option = "fzf-sk-grep";
+          commands = "set-option global fzf_sk_grep_command 'rg --no-heading --follow --hidden --glob=!.git --color always'";
         }
         {
           name = "WinCreate";
