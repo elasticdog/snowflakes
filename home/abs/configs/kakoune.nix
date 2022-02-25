@@ -20,6 +20,7 @@
           commands = "git update-diff";
         }
         {
+          # use jj to escape insert mode
           name = "InsertChar";
           option = "j";
           commands = ''
@@ -29,6 +30,16 @@
             }
           '';
         }
+        {
+          name = "WinCreate";
+          option = "^[^*]+$";
+          commands = ''
+            editorconfig-load
+            git show-diff
+          '';
+        }
+
+        # fzf.kak plugin
         {
           name = "ModuleLoaded";
           option = "fzf";
@@ -49,19 +60,12 @@
           option = "fzf-sk-grep";
           commands = "set-option global fzf_sk_grep_command 'rg --no-heading --follow --hidden --glob=!.git --color always'";
         }
-        {
-          name = "WinCreate";
-          option = "^[^*]+$";
-          commands = ''
-            editorconfig-load
-            git show-diff
-          '';
-        }
       ];
 
       keyMappings = [
         { mode = "insert"; key = "<c-[>"; effect = "<esc>"; }
         { mode = "normal"; key = "<c-p>"; effect = ": fzf-mode<ret>"; }
+        { mode = "normal"; key = "/"; effect = "/(?i)"; } # case-insensitive search
 
         {
           mode = "normal";
