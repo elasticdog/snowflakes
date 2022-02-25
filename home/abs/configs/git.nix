@@ -10,6 +10,13 @@
     # https://github.com/dandavison/delta
     delta.enable = true;
 
+    delta.options = {
+      features = "decorations";
+      decorations = {
+        commit-decoration-style = "yellow box ul";
+      };
+    };
+
     extraConfig = {
       commit.verbose = true;
       init.defaultBranch = "main";
