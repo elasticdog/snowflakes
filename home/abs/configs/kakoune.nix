@@ -7,7 +7,18 @@
     config = {
       autoReload = "yes";
 
+      # "^[^*]+$" matches everything except built-in read-only buffers
       hooks = [
+        {
+          name = "BufReload";
+          option = "^[^*]+$";
+          commands = "git update-diff";
+        }
+        {
+          name = "BufWritePost";
+          option = "^[^*]+$";
+          commands = "git update-diff";
+        }
         {
           name = "ModuleLoaded";
           option = "fzf";
@@ -31,7 +42,10 @@
         {
           name = "WinCreate";
           option = "^[^*]+$";
-          commands = "editorconfig-load";
+          commands = ''
+            editorconfig-load
+            git show-diff
+          '';
         }
       ];
 
