@@ -62,6 +62,13 @@
       keyMappings = [
         { mode = "insert"; key = "<c-[>"; effect = "<esc>"; }
         { mode = "normal"; key = "<c-p>"; effect = ": fzf-mode<ret>"; }
+
+        {
+          mode = "normal";
+          key = "=";
+          docstring = "Format selection to a width of `autowrap_column` characters";
+          effect = "|fmt -w $kak_opt_autowrap_column<ret>";
+        }
       ];
 
       numberLines = {
