@@ -8,6 +8,7 @@
     ./configs/flameshot.nix
     ./configs/gpg.nix
     ./configs/git.nix
+    ./configs/kakoune.nix
     ./configs/kitty.nix
     ./configs/sway.nix
     ./configs/swayidle.nix
@@ -15,12 +16,12 @@
     ./configs/wlsunet.nix
   ];
 
-  programs.home-manager.enable = true;
-  home.username = "abs";
-  home.homeDirectory = "/home/abs";
-
   # https://nix-community.github.io/home-manager/release-notes.html
   home.stateVersion = "22.05";
+  programs.home-manager.enable = true;
+
+  home.username = "abs";
+  home.homeDirectory = "/home/abs";
 
   home.file.backgrounds = {
     source = ./backgrounds;
