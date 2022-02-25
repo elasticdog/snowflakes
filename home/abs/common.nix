@@ -53,4 +53,8 @@
     zathura
     zoom-us
   ];
+
+  home.sessionVariables = {
+    EDITOR = "kak";
+  };
 }
