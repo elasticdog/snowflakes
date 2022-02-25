@@ -20,6 +20,16 @@
           commands = "git update-diff";
         }
         {
+          name = "InsertChar";
+          option = "j";
+          commands = ''
+            try %{
+              exec -draft hH <a-k>jj<ret> d
+              exec <esc>
+            }
+          '';
+        }
+        {
           name = "ModuleLoaded";
           option = "fzf";
           commands = "set-option global fzf_highlight_command bat";
