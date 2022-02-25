@@ -78,9 +78,19 @@
       numberLines = {
         enable = true;
         relative = true;
+        separator = "'  '";
       };
 
       showMatching = true;
+
+      showWhitespace = {
+        enable= true;
+        lineFeed = " ";
+        space = " ";
+        tab = "➜";
+        tabStop = "·";
+      };
+
       tabStop = 4;
 
       ui = {
@@ -89,6 +99,7 @@
     };
 
     extraConfig = ''
+      add-highlighter global/trailing-whitespace regex "\h+$" 0:default,red
       set-option global autowrap_column 80
       set-option global grepcmd 'rg --column --follow'
     '';
