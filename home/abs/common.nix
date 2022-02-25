@@ -29,6 +29,7 @@
     editorconfig-core-c
     fd
     glances
+    glow
     helix
     hyperfine
     jless
