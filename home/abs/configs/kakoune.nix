@@ -8,7 +8,6 @@
       autoReload = "yes";
 
       hooks = [
-        { name = "ModuleLoaded"; option = "fzf"; commands = "set-option global fzf_implementation sk"; }
         { name = "WinCreate"; option = "^[^*]+$"; commands = "editorconfig-load"; }
       ];
 
