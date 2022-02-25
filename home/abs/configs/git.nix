@@ -4,8 +4,7 @@
     userEmail = "aaron@elasticdog.com";
     userName = "Aaron Bull Schaefer";
 
-    aliases = {
-    };
+    aliases = { };
 
     # https://github.com/dandavison/delta
     delta.enable = true;

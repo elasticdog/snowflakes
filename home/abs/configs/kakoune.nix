@@ -9,16 +9,8 @@
 
       # "^[^*]+$" matches everything except built-in read-only buffers
       hooks = [
-        {
-          name = "BufReload";
-          option = "^[^*]+$";
-          commands = "git update-diff";
-        }
-        {
-          name = "BufWritePost";
-          option = "^[^*]+$";
-          commands = "git update-diff";
-        }
+        { name = "BufReload"; option = "^[^*]+$"; commands = "git update-diff"; }
+        { name = "BufWritePost"; option = "^[^*]+$"; commands = "git update-diff"; }
         {
           # use jj to escape insert mode
           name = "InsertChar";
@@ -84,7 +76,7 @@
       showMatching = true;
 
       showWhitespace = {
-        enable= true;
+        enable = true;
         lineFeed = " ";
         space = " ";
         tab = "➜";
