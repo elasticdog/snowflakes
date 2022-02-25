@@ -8,7 +8,21 @@
       autoReload = "yes";
 
       hooks = [
-        { name = "WinCreate"; option = "^[^*]+$"; commands = "editorconfig-load"; }
+        {
+          name = "ModuleLoaded";
+          option = "fzf";
+          commands = "set-option global fzf_highlight_command bat";
+        }
+        {
+          name = "ModuleLoaded";
+          option = "fzf-file";
+          commands = "set-option global fzf_file_command 'fd --type f --follow --hidden --exclude /.git/'";
+        }
+        {
+          name = "WinCreate";
+          option = "^[^*]+$";
+          commands = "editorconfig-load";
+        }
       ];
 
       keyMappings = [
