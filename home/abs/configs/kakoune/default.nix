@@ -2,7 +2,7 @@
 
 {
   xdg.configFile.colorscheme_kakoune = {
-    source = ../colorscheme/kakoune.kak;
+    source = ../../colorscheme/kakoune.kak;
     target = "kak/colors/elasticdog.kak";
   };
 

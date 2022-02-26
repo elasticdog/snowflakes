@@ -2,18 +2,18 @@
 
 {
   imports = [
-    ./configs/direnv.nix
-    ./configs/fish.nix
-    ./configs/firefox.nix
-    ./configs/flameshot.nix
-    ./configs/gpg.nix
-    ./configs/git.nix
-    ./configs/kakoune.nix
-    ./configs/kitty.nix
-    ./configs/sway.nix
-    ./configs/swayidle.nix
-    ./configs/waybar.nix
-    ./configs/wlsunet.nix
+    ./configs/direnv
+    ./configs/fish
+    ./configs/firefox
+    ./configs/flameshot
+    ./configs/gpg
+    ./configs/git
+    ./configs/kakoune
+    ./configs/kitty
+    ./configs/sway
+    ./configs/swayidle
+    ./configs/waybar
+    ./configs/wlsunset
   ];
 
   # https://nix-community.github.io/home-manager/release-notes.html
