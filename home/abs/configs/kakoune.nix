@@ -97,6 +97,13 @@
       ui = {
         assistant = "none";
       };
+
+      wrapLines = {
+        enable = true;
+        indent = true;
+        marker = "⏎";
+        word = true;
+      };
     };
 
     extraConfig = ''
