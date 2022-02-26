@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 {
-  xdg.configFile.kitty_theme = {
+  xdg.configFile.colorscheme_kitty = {
     source = ../colorscheme/kitty.conf;
     target = "kitty/themes/elasticdog.conf";
   };

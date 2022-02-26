@@ -1,11 +1,18 @@
 { pkgs, ... }:
 
 {
+  xdg.configFile.colorscheme_kakoune = {
+    source = ../colorscheme/kakoune.kak;
+    target = "kak/colors/elasticdog.kak";
+  };
+
   programs.kakoune = {
     enable = true;
 
     config = {
       autoReload = "yes";
+
+      colorScheme = "elasticdog";
 
       # "^[^*]+$" matches everything except built-in read-only buffers
       hooks = [
@@ -30,6 +37,7 @@
             git show-diff
           '';
         }
+        { name = "WinDisplay"; option = "^[^*]+$"; commands = "git update-diff"; }
 
         # fzf.kak plugin
         {
@@ -69,6 +77,7 @@
 
       numberLines = {
         enable = true;
+        highlightCursor = true;
         relative = true;
         separator = "'  '";
       };
