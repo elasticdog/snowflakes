@@ -83,7 +83,10 @@
         {
           name = "ModuleLoaded";
           option = "fzf";
-          commands = "set-option global fzf_highlight_command bat";
+          commands = ''
+            set-option global fzf_highlight_command bat
+            set-option global fzf_use_main_selection false
+          '';
         }
         {
           name = "ModuleLoaded";
