@@ -70,6 +70,8 @@ evaluate-commands %sh{
         face global MenuInfo ${base02},default
         face global Information ${base04},${base01}
         face global Error ${base00},${red}
+        face global DiagnosticError ${red}
+        face global DiagnosticWarning ${yellow}
         face global StatusLine ${base05},${base01}
         face global StatusLineMode ${green},default
         face global StatusLineInfo ${magenta_bright},default
@@ -79,7 +81,9 @@ evaluate-commands %sh{
         face global BufferPadding ${base01},default
         face global LineNumbers ${base03},default
         face global LineNumberCursor ${base04},default+b
+        face global LineNumbersWrapped ${base04},default+i
         face global MatchingChar default,${base01}+b
         face global Whitespace ${base01},default+f
+        face global WrapMarker ${base03}
     "
 }
