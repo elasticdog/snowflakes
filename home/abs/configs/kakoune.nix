@@ -55,17 +55,6 @@
           commands = "git update-diff";
         }
         {
-          # use jj to escape insert mode
-          name = "InsertChar";
-          option = "j";
-          commands = ''
-            try %{
-              exec -draft hH <a-k>jj<ret> d
-              exec <esc>
-            }
-          '';
-        }
-        {
           name = "WinCreate";
           option = "^[^*]+$";
           commands = ''
