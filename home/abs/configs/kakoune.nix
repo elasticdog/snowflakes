@@ -253,7 +253,7 @@
         enable = true;
         lineFeed = " ";
         space = " ";
-        tab = "➜";
+        tab = "⏵";
         tabStop = "·";
       };
 
