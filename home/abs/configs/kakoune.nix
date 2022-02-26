@@ -64,7 +64,7 @@
 
       keyMappings = [
         { mode = "insert"; key = "<c-[>"; effect = "<esc>"; }
-        { mode = "normal"; key = "<c-p>"; effect = ": fzf-mode<ret>"; }
+        { mode = "normal"; key = "<c-p>"; effect = ": fzf-mode<ret>f"; }
         { mode = "normal"; key = "/"; effect = "/(?i)"; } # case-insensitive search
 
         {
