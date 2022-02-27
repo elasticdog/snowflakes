@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./clipboard.nix
     ./explore.nix
     ./hooks.nix
     ./key-mappings.nix
