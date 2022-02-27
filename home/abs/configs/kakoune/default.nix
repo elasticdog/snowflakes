@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./explore.nix
     ./hooks.nix
     ./key-mappings.nix
   ];

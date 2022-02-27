@@ -91,6 +91,12 @@
       # user mode
       {
         mode = "user";
+        key = ",";
+        docstring = "explore the directory of the current file";
+        effect = ": explore<ret>";
+      }
+      {
+        mode = "user";
         key = "b";
         docstring = "open buffers with fuzzy finder";
         effect = ": fzf-mode<ret>b";
