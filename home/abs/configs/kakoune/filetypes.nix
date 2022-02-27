@@ -1,3 +1,5 @@
+{ pkgs, ... }:
+
 {
   programs.kakoune.config = {
     # "^[^*]+$" matches everything except built-in read-only buffers
@@ -47,14 +49,14 @@
         name = "WinSetOption";
         option = "filetype=json";
         commands = ''
-          set-option window formatcmd "prettier --parser json"
+          set-option window formatcmd "${pkgs.nodePackages.prettier}/bin/prettier --parser json"
         '';
       }
       {
         name = "WinSetOption";
         option = "filetype=jsonnet";
         commands = ''
-          set-option window formatcmd "jsonnetfmt --string-style d -"
+          set-option window formatcmd "jsonnet fmt --string-style d -"
           hook buffer BufWritePre .* %{ format }
         '';
       }
@@ -62,7 +64,7 @@
         name = "WinSetOption";
         option = "filetype=markdown";
         commands = ''
-          set-option window formatcmd "prettier --parser markdown --prose-wrap always"
+          set-option window formatcmd "${pkgs.nodePackages.prettier}/bin/prettier --parser markdown --prose-wrap always"
         '';
       }
       {
@@ -91,8 +93,8 @@
         name = "WinSetOption";
         option = "filetype=sh";
         commands = ''
-          set-option window formatcmd "shfmt -s"
-          set-option window lintcmd "shellcheck --external-sources --format=gcc"
+          set-option window formatcmd "${pkgs.shfmt}/bin/shfmt -s"
+          set-option window lintcmd "${pkgs.shellcheck}/bin/shellcheck --external-sources --format=gcc"
           hook buffer BufWritePre .* %{ lint }
         '';
       }
@@ -107,8 +109,8 @@
         name = "WinSetOption";
         option = "filetype=yaml";
         commands = ''
-          set-option window formatcmd "prettier --parser yaml"
-          set-option window lintcmd "yamllint -f parsable"
+          set-option window formatcmd "${pkgs.nodePackages.prettier}/bin/prettier --parser yaml"
+          set-option window lintcmd "${pkgs.yamllint}/bin/yamllint -f parsable"
           hook buffer BufWritePre .* %{ lint }
         '';
       }
