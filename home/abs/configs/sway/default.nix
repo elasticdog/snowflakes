@@ -1,4 +1,4 @@
-{ config, lib, ... }:
+{ config, lib, pkgs, ... }:
 
 {
   wayland.windowManager.sway = {
@@ -47,12 +47,6 @@
         "*" = { bg = "~/.local/share/backgrounds/firewatch-awake-3840x2160.jpg stretch"; };
       };
 
-      # TODO: this generates the proper environment variables, but doesn't work
-      # due to an upstream bug: https://github.com/swaywm/sway/issues/4610
-      #
-      # adjust the size of the mouse cursor
-      seat = { "seat0" = { xcursor_theme = "default 64"; }; };
-
       bars = [ ]; # disable swaybars
       focus.forceWrapping = true;
       fonts.size = 0.0;
@@ -76,5 +70,15 @@
       for_window [app_id="firefox" title="Sharing Indicator$"] floating enable, sticky enable, border none, move position 1835 px 995 px
       for_window [app_id="qalculate-gtk"] floating enable, resize set 20 ppt, move position 18 px 9 px, move scratchpad, scratchpad show
     '';
+  };
+
+  wayland.windowManager.sway.config.seat = {
+    "seat0" = { xcursor_theme = "phinger-cursors-light 24"; };
+  };
+
+  xsession.pointerCursor = {
+    package = pkgs.phinger-cursors;
+    name = "phinger-cursors-light";
+    size = 32;
   };
 }
