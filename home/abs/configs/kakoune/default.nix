@@ -4,6 +4,7 @@
   imports = [
     ./clipboard.nix
     ./explore.nix
+    ./filetypes.nix
     ./hooks.nix
     ./key-mappings.nix
   ];
