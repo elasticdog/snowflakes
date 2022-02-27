@@ -14,6 +14,7 @@
     ./configs/swayidle
     ./configs/waybar
     ./configs/wlsunset
+    ./configs/yamllint
   ];
 
   # https://nix-community.github.io/home-manager/release-notes.html
