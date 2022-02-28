@@ -14,6 +14,7 @@
     ./configs/ripgrep
     ./configs/sway
     ./configs/swayidle
+    ./configs/tridactyl
     ./configs/waybar
     ./configs/wlsunset
     ./configs/yamllint
