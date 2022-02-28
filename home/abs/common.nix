@@ -14,6 +14,7 @@
     ./configs/ripgrep
     ./configs/sway
     ./configs/swayidle
+    ./configs/tig
     ./configs/tridactyl
     ./configs/waybar
     ./configs/wlsunset
@@ -48,7 +49,6 @@
     shfmt
     skim
     spotify
-    tig
     tree
     zathura
     zoom-us
