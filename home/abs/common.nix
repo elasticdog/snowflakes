@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./configs/bat
     ./configs/direnv
     ./configs/fish
     ./configs/firefox
