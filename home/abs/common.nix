@@ -4,13 +4,14 @@
   imports = [
     ./configs/bat
     ./configs/direnv
-    ./configs/fish
     ./configs/firefox
+    ./configs/fish
     ./configs/flameshot
-    ./configs/gpg
     ./configs/git
+    ./configs/gpg
     ./configs/kakoune
     ./configs/kitty
+    ./configs/lf
     ./configs/ripgrep
     ./configs/sway
     ./configs/swayidle
@@ -38,7 +39,6 @@
     hyperfine
     jless
     jq
-    lf
     nixpkgs-fmt
     nodePackages.prettier
     pamixer
