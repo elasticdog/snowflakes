@@ -11,6 +11,7 @@
     ./configs/git
     ./configs/kakoune
     ./configs/kitty
+    ./configs/ripgrep
     ./configs/sway
     ./configs/swayidle
     ./configs/waybar
@@ -42,14 +43,12 @@
     pastel
     pavucontrol
     qalculate-gtk
-    ripgrep
     shellcheck
     shfmt
     skim
     spotify
     tig
     tree
-    yamllint
     zathura
     zoom-us
   ];
