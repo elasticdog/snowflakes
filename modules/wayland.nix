@@ -17,6 +17,7 @@
     iosevka
     fira-code
     font-awesome
+    unicode-emoji
   ];
 
   # allow for screen sharing
