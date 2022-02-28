@@ -40,6 +40,7 @@
     nixpkgs-fmt
     nodePackages.prettier
     pamixer
+    pastel
     pavucontrol
     qalculate-gtk
     ripgrep
