@@ -96,7 +96,7 @@
         };
 
         backlight = {
-          format = "{percent}% ";
+          format = "{percent}% ";
           on-scroll-up = "brillo -q -U 8";
           on-scroll-down = "brillo -q -A 10";
           smooth-scrolling-threshold = 2.0;
@@ -116,6 +116,7 @@
         };
 
         clock = {
+          format = "{:%H:%M} ";
           format-alt = "{:%a, %b %d  %H:%M %Z}";
           smooth-scrolling-threshold = 4.0;
           timezones = [ "America/Los_Angeles" "UTC" ];
