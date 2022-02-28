@@ -10,10 +10,11 @@
     delta.enable = true;
 
     delta.options = {
-      features = "decorations";
       decorations = {
         commit-decoration-style = "yellow box ul";
       };
+      features = "decorations";
+      light = true;
     };
 
     extraConfig = {
