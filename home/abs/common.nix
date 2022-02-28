@@ -26,7 +26,6 @@
   home.homeDirectory = "/home/abs";
 
   home.packages = with pkgs; [
-    bat
     bitwarden-cli
     editorconfig-core-c
     fd
