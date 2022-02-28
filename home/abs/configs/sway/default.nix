@@ -40,6 +40,7 @@
           "XF86Favorites" = "exec swaylock --daemonize --show-failed-attempts --image ~/.local/share/backgrounds/firewatch-asleep-3840x2160.jpg";
           "Control+Mod1+XF86Favorites" = "exec reboot";
           "Control+Mod4+Mod1+XF86Favorites" = "exec poweroff";
+          "${modifier}+0" = "workspace back_and_forth";
           "${modifier}+equal" = "[app_id=\"qalculate-gtk\"] scratchpad show";
         };
 
@@ -52,7 +53,7 @@
       fonts.size = 0.0;
       menu = "j4-dmenu-desktop --no-generic --dmenu=\"bemenu --no-overlap --prompt ' ' --ignorecase --list 8 --scrollbar autohide --wrap\"";
       terminal = "kitty --single-instance";
-      workspaceAutoBackAndForth = true;
+      workspaceAutoBackAndForth = false;
       workspaceLayout = "stacking";
     };
 
