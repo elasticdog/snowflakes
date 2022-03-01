@@ -33,7 +33,7 @@
       strip_trailing_spaces = "smart";
       touch_scroll_multiplier = "8.0";
       update_check_interval = 0;
-      window_padding_width = "4 6";
+      window_padding_width = "3 2";
     };
   };
 }
