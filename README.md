@@ -1,5 +1,7 @@
 # Snowflakes
 
+![Sway Window Manager Screenshot](./screenshot.png)
+
 > _"These are my snowflakes. There are many like them, but these are mine. My
 > snowflakes are my best friends. They are my life. I must master them as I must
 > master my life. Without me, my snowflakes are useless. Without my snowflakes,
@@ -17,16 +19,20 @@ snowflakes/
 ├── home/
 │   └── abs/
 │       ├── configs/
-│       │   ├── fish.nix
-│       │   ├── git.nix
+│       │   ├── firefox/
+│       │   ├── fish/
+│       │   ├── git/
+│       │   ├── sway/
 │       │   └── [...]
 │       ├── common.nix
 │       └── holystone.nix
 ├── hosts/
 │   └── holystone/
 │       ├── configuration.nix
-│       └── hardware-configuration.nix
+│       ├── hardware-configuration.nix
+│       └── [...]
 ├── modules/
+│   ├── audio.nix
 │   ├── common.nix
 │   ├── nix.nix
 │   ├── services.nix
