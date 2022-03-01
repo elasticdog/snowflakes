@@ -1,6 +1,10 @@
 { pkgs, ... }:
 
 {
+  home.sessionVariables = {
+    LF_ICONS = "ln= :or= :tw= :ow=  :st=  :di= :pi=⧐ :so=⏣ :bd=▤ :cd=  :su=  :sg=  :ex= :fi= :";
+  };
+
   programs.lf = {
     enable = true;
 
