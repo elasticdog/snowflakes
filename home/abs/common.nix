@@ -8,6 +8,7 @@
     ./configs/fish
     ./configs/flameshot
     ./configs/git
+    ./configs/glances
     ./configs/gpg
     ./configs/kakoune
     ./configs/kitty
@@ -33,7 +34,6 @@
     bitwarden-cli
     editorconfig-core-c
     fd
-    glances
     glow
     helix
     hyperfine
