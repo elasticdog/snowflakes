@@ -9,6 +9,8 @@
     ./key-mappings.nix
   ];
 
+  home.packages = [ pkgs.editorconfig-core-c ];
+
   xdg.configFile.colorscheme_kakoune = {
     source = ../../colorscheme/kakoune.kak;
     target = "kak/colors/elasticdog.kak";

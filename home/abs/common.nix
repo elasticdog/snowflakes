@@ -32,7 +32,6 @@
 
   home.packages = with pkgs; [
     bitwarden-cli
-    editorconfig-core-c
     fd
     glow
     helix
