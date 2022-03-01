@@ -49,6 +49,10 @@
         "*" = { bg = "~/.local/share/backgrounds/firewatch-awake-3840x2160.jpg stretch"; };
       };
 
+      startup = [
+        { command = "systemctl --user restart waybar.service"; always = true; }
+      ];
+
       bars = [ ]; # disable swaybars
       focus.forceWrapping = true;
       fonts.size = 0.0;
