@@ -74,11 +74,11 @@
 
       for_window [app_id="qalculate-gtk"] floating enable, resize set 20 ppt, move position 18 px 9 px, move scratchpad, scratchpad show
 
-      for_window [app_id="^$" title="^Choose ONE of the audio conference options$"] floating enable
-      for_window [app_id="^$" title="^(About|Settings)$"] floating enable
-      for_window [app_id="^$" title="^[zZ]oom"] move container to workspace 9, floating enable
-      for_window [app_id="^$" title="^Zoom - Licensed Account$"] floating disable
-      for_window [app_id="^$" title="^Zoom Meeting$"] workspace number 9, floating disable, inhibit_idle open
+      for_window [class="zoom" title="^Choose ONE of the audio conference options$"] floating enable
+      for_window [class="zoom" title="^(About|Settings)$"] floating enable
+      for_window [class="zoom" title="^[zZ]oom"] move container to workspace 9, floating enable
+      for_window [class="zoom" title="^Zoom - Licensed Account$"] floating disable
+      for_window [class="zoom" title="^Zoom Meeting$"] workspace number 9, floating disable, inhibit_idle open
     '';
   };
 
