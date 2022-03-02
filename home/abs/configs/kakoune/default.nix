@@ -67,4 +67,9 @@
       pkgs.kakounePlugins.kak-fzf
     ];
   };
+
+  # only used by the fzf.kak plugin
+  home.sessionVariables = {
+    FZF_DEFAULT_OPTS = "--color light";
+  };
 }
