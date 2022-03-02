@@ -49,6 +49,7 @@
     shfmt
     spotify
     tree
+    vault
     zathura
     zoom-us
   ];
