@@ -5,6 +5,7 @@
     ./fish_prompt.nix
     ./fish_right_prompt.nix
     ./fish_user_key_bindings.nix
+    ./gcd.nix
   ];
 
   programs.fish = {
