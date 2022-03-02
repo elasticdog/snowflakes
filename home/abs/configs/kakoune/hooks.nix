@@ -66,7 +66,7 @@
       {
         name = "ModuleLoaded";
         option = "fzf-file";
-        commands = "set-option global fzf_file_command 'fd --type f --follow --hidden --exclude /.git/ --color never'";
+        commands = "set-option global fzf_file_command 'fd --type f --follow --hidden --exclude .git/ --strip-cwd-prefix --color never'";
       }
       {
         name = "ModuleLoaded";

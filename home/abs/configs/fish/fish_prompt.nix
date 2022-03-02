@@ -1,6 +1,6 @@
 {
   programs.fish.functions = {
-    fish_prompt = ''
+    fish_prompt.body = ''
       if test -n "$SSH_TTY"
           echo -n (set_color -b D3D4D4)(set_color brred)"$USER"(set_color white)'@'(set_color yellow)(prompt_hostname)' '
       end

@@ -14,6 +14,7 @@
     ./configs/kitty
     ./configs/lf
     ./configs/ripgrep
+    ./configs/skim
     ./configs/sway
     ./configs/swayidle
     ./configs/tig
@@ -46,7 +47,6 @@
     qalculate-gtk
     shellcheck
     shfmt
-    skim
     spotify
     tree
     zathura
