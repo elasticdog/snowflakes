@@ -4,7 +4,6 @@
   imports = [
     ./audio.nix
     ./containers.nix
-    ./flatpak.nix
     ./nix.nix
     ./services.nix
     ./users.nix

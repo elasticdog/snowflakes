@@ -50,6 +50,7 @@
     spotify
     tree
     zathura
+    zoom-us
   ];
 
   home.sessionVariables = {
