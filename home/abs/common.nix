@@ -49,6 +49,7 @@
     shellcheck
     shfmt
     spotify
+    sshpass
     tree
     vault
     zathura
