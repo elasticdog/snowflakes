@@ -13,6 +13,7 @@
     ./configs/kakoune
     ./configs/kitty
     ./configs/lf
+    ./configs/obs-studio
     ./configs/ripgrep
     ./configs/skim
     ./configs/sway
