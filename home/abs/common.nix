@@ -36,6 +36,7 @@
     bitwarden-cli
     fd
     glow
+    gron
     helix
     hyperfine
     jless
