@@ -29,6 +29,9 @@
     efi.canTouchEfiVariables = true;
   };
 
+  boot.extraModulePackages = [ config.boot.kernelPackages.v4l2loopback ];
+  boot.kernelModules = [ "v4l2loopback" ];
+
   home-manager.useGlobalPkgs = true;
   home-manager.useUserPackages = true;
   home-manager.users.abs = import ../../home/abs/holystone.nix;
