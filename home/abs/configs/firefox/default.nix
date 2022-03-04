@@ -11,10 +11,44 @@
       work = {
         id = 0;
         isDefault = true;
+        bookmarks = {
+          aws = {
+            keyword = "aws";
+            name = "Amazon Web Services (AWS) management console";
+            url = "https://elastic-prod.signin.aws.amazon.com/console";
+          };
+          gcp = {
+            keyword = "gcp";
+            name = "Google Cloud Platform (GCP) management console";
+            url = "https://console.cloud.google.com/";
+          };
+          github = {
+            keyword = "gh";
+            name = "GitHub - Elastic";
+            url = "https://github.com/elastic/";
+          };
+        };
       };
 
       home = {
         id = 1;
+        bookmarks = {
+          hackernews = {
+            keyword = "hn";
+            name = "Hacker News";
+            url = "https://news.ycombinator.com/";
+          };
+          lobsters = {
+            keyword = "l";
+            name = "Lobsters";
+            url = "https://lobste.rs/";
+          };
+          pinboard = {
+            keyword = "pb";
+            name = "Pinboard";
+            url = "https://pinboard.in/";
+          };
+        };
       };
 
       compatibility = {
