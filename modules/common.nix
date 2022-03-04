@@ -5,6 +5,7 @@
     ./audio.nix
     ./containers.nix
     ./nix.nix
+    ./printing.nix
     ./services.nix
     ./users.nix
     ./wayland.nix
