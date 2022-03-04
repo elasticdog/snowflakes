@@ -12,6 +12,7 @@
     ./hardware-configuration.nix
     ./hotkey-functions.nix
     ../../modules/common.nix
+    ../../modules/laptop.nix
   ];
 
   boot.initrd.luks.devices = {

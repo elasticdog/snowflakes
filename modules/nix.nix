@@ -16,4 +16,6 @@
 
     settings.allowed-users = [ "@wheel" ];
   };
+
+  nixpkgs.config.allowUnfree = true;
 }

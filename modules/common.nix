@@ -2,27 +2,27 @@
 
 {
   imports = [
-    ./audio.nix
     ./containers.nix
     ./nix.nix
-    ./printing.nix
-    ./services.nix
     ./users.nix
-    ./wayland.nix
   ];
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
   boot.tmpOnTmpfs = true;
 
-  networking.networkmanager.enable = true;
-  networking.networkmanager.wifi.backend = "iwd";
-
-  nixpkgs.config.allowUnfree = true;
-
   security.sudo.execWheelOnly = true;
   security.sudo.extraConfig = ''
     Defaults timestamp_timeout=120
   '';
+
+  # preferred over the default systemd-timesyncd for ntp
+  services.chrony.enable = true;
+
+  services.openssh = {
+    enable = true;
+    passwordAuthentication = false;
+    startWhenNeeded = true;
+  };
 
   time.timeZone = "UTC";
 }
