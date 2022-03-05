@@ -5,4 +5,7 @@
     ./wayland.nix
     ./wifi.nix
   ];
+
+  # optimize laptop battery life
+  services.tlp.enable = true;
 }

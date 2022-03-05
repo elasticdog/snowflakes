@@ -3,6 +3,7 @@
 {
   imports = [
     ./containers.nix
+    ./home-manager.nix
     ./nix.nix
     ./users.nix
   ];

@@ -30,12 +30,9 @@
     efi.canTouchEfiVariables = true;
   };
 
+  # allows obs studio to create virtual cameras
   boot.extraModulePackages = [ config.boot.kernelPackages.v4l2loopback ];
   boot.kernelModules = [ "v4l2loopback" ];
-
-  home-manager.useGlobalPkgs = true;
-  home-manager.useUserPackages = true;
-  home-manager.users.abs = import ../../home/abs/holystone.nix;
 
   networking.hostName = "holystone";
   networking = {
@@ -47,9 +44,6 @@
 
   # enable periodic SSD TRIM of mounted partitions in background
   services.fstrim.enable = true;
-
-  # optimize laptop battery life
-  services.tlp.enable = true;
 
   time.timeZone = lib.mkForce "America/Los_Angeles";
 
