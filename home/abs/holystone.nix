@@ -16,6 +16,7 @@
   ];
 
   home.packages = with pkgs; [
+    imv
     qalculate-gtk
     spotify
     zathura
