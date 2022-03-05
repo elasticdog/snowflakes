@@ -1,6 +1,11 @@
 { config, lib, pkgs, ... }:
 
 {
+  # dependencies bound to hotkey functions
+  home.packages = with pkgs; [
+    pamixer
+  ];
+
   wayland.windowManager.sway = {
     enable = true;
     systemdIntegration = true;

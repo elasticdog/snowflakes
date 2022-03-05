@@ -5,6 +5,6 @@
   home-manager.useUserPackages = true;
 
   home-manager.users = {
-    abs = import ../home/abs/holystone.nix;
+    abs = import ../home/abs/${config.networking.hostName}.nix;
   };
 }

@@ -4,24 +4,15 @@
   imports = [
     ./configs/bat
     ./configs/direnv
-    ./configs/firefox
     ./configs/fish
-    ./configs/flameshot
     ./configs/git
     ./configs/glances
     ./configs/gpg
     ./configs/kakoune
-    ./configs/kitty
     ./configs/lf
-    ./configs/obs-studio
     ./configs/ripgrep
     ./configs/skim
-    ./configs/sway
-    ./configs/swayidle
     ./configs/tig
-    ./configs/tridactyl
-    ./configs/waybar
-    ./configs/wlsunset
     ./configs/yamllint
   ];
 
@@ -43,26 +34,15 @@
     jq
     nixpkgs-fmt
     nodePackages.prettier
-    pamixer
     pastel
-    pavucontrol
-    qalculate-gtk
     shellcheck
     shfmt
-    spotify
     sshpass
     tree
     vault
-    zathura
-    zoom-us
   ];
 
   home.sessionVariables = {
     EDITOR = "kak";
-  };
-
-  xdg.dataFile.backgrounds = {
-    recursive = true;
-    source = ./backgrounds;
   };
 }

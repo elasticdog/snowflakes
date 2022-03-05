@@ -1,4 +1,12 @@
+{ pkgs, ... }:
+
 {
+  # dependencies bound to on-click events
+  home.packages = with pkgs; [
+    pamixer
+    pavucontrol
+  ];
+
   programs.waybar = {
     enable = true;
 
