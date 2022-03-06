@@ -19,6 +19,7 @@
     imv
     qalculate-gtk
     spotify
+    vlc
     zathura
     zoom-us
   ];
