@@ -1,6 +1,7 @@
 {
   imports = [
     ./audio.nix
+    ./backups.nix
     ./printing.nix
     ./wayland.nix
     ./wifi.nix
