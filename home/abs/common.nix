@@ -27,6 +27,7 @@
     bitwarden-cli
     fd
     glow
+    gmailctl
     gron
     helix
     hyperfine
