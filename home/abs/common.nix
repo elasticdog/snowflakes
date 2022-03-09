@@ -35,6 +35,7 @@
     jq
     nixpkgs-fmt
     nodePackages.prettier
+    obsidian
     pastel
     shellcheck
     shfmt
