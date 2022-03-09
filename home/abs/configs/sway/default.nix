@@ -84,6 +84,7 @@
       for_window [app_id="^$" title="^[zZ]oom"] move container to workspace 9, floating enable
       for_window [app_id="^$" title="^Zoom - Licensed Account$"] floating disable
       for_window [app_id="^$" title="^Zoom Meeting$"] workspace number 9, floating disable, inhibit_idle open
+      for_window [app_id="^$" title="^Zoom Webinar$"] workspace number 9, floating disable, inhibit_idle open
     '';
   };
 
