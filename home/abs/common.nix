@@ -40,6 +40,7 @@
     shfmt
     sshpass
     tree
+    treefmt
     vault
   ];
 
