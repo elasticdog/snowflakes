@@ -12,6 +12,7 @@
     ./configs/lf
     ./configs/ripgrep
     ./configs/skim
+    ./configs/texlive
     ./configs/tig
     ./configs/yamllint
   ];
