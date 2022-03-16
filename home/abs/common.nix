@@ -28,6 +28,7 @@
     bitwarden-cli
     fd
     glow
+    gnumake
     gmailctl
     gron
     helix
