@@ -6,6 +6,7 @@
     ./home-manager.nix
     ./nix.nix
     ./users.nix
+    ./vpn.nix
   ];
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
