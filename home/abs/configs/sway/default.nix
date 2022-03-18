@@ -92,7 +92,7 @@
     "seat0" = { xcursor_theme = "phinger-cursors-light 24"; };
   };
 
-  xsession.pointerCursor = {
+  gtk.cursorTheme = {
     package = pkgs.phinger-cursors;
     name = "phinger-cursors-light";
     size = 32;
