@@ -5,10 +5,9 @@
   # what to do when the laptop lid is closed
   # or the power button is short-pressed
   services.logind = {
-    lidSwitch = "suspend-then-hibernate";
+    lidSwitch = "suspend";
     extraConfig = ''
-      HandlePowerKey=suspend-then-hibernate
+      HandlePowerKey=suspend
     '';
   };
-  systemd.sleep.extraConfig = "HibernateDelaySec=3h";
 }

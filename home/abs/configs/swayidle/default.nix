@@ -27,7 +27,7 @@
         }
         {
           timeout = 3600; # 60m
-          command = "systemctl suspend-then-hibernate";
+          command = "systemctl suspend";
         }
       ];
     };
